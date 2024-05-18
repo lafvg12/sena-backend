@@ -1,10 +1,13 @@
 {
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
     "pg": "^8.11.5"
   },
+  "type": "module",
   "name": "sena-backend",
   "version": "1.0.0",
   "main": "index.js",
@@ -15,5 +18,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/express-session": "^1.18.0"
+  }
 }
