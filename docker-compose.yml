@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  db:
+    build: .
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: login
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: example
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
