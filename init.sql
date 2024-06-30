@@ -4,4 +4,4 @@ CREATE TABLE IF NOT EXISTS usuarios (
   clave VARCHAR(50) NOT NULL
 );
 
-INSERT INTO usuarios (usuario, clave) VALUES ('admin', 'admin');
+INSERT INTO usuarios (usuario, clave) VALUES ('andresf', '1234567');
