@@ -1,4 +1,5 @@
 import { errorsAuth } from "../../constants.js";
+import { verifyToken } from "../utils/auth.js";
 
 export const authorizationMiddleware  = (req, res, next) => {
 
