@@ -6,7 +6,7 @@ import 'dotenv/config';
 import { generateHashPassword, verifyToken, signTokenJWT, comparePassword } from './utils/auth.js';
 
 const app = express();
-const port = process.env.PORT_LOCAL || 3002;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors());

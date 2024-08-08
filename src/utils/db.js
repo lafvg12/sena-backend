@@ -13,7 +13,6 @@ const pool = new Pool({
     }
 });
 
-console.log('pool', pool);
 export async function clientDB() {
     const client = await pool.connect();
     return client;
