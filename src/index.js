@@ -31,7 +31,7 @@ app.post('/register', async (req, res) => {
   }
 });
 
-app.get('/users', async (req, res) => {
+app.get('/users', authorizationMiddleware , async (req, res) => {
   const client = await clientDB();
   const qGetUsers = 'SELECT * FROM users';
   const allUsers = await client.query(qGetUsers);
